@@ -1,4 +1,4 @@
-# Prediction U.S. Recessions with Machine Learning
+# Predicting U.S. Recessions with Machine Learning
 
 ## Goal
 
