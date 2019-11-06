@@ -29,3 +29,10 @@ The model scored high for all time frames, and with both shuffled and non-shuffl
 
 To get a visual sense of this, a line chart was also made to show the average of both correctly predicted recessions and correctly predicted non-recessions. For correctly predicting recessions one quarter out, the non-shuffled model worked best, with 73% accuracy. Because a recession is technically defined as a fall in GDP for two consecutive quarters, to predict a recession one quarter out requires knowing what is happening in the immediate preceding quarter. However, models predicting recessions two and four quarters out had higher accuracy with shuffled data. 
 ![plot](https://github.com/lorijta92/machine-learning-predicting-recessions/blob/master/images/plots/shuffle_noShuffule_vs20.png?raw=true)
+
+
+## Driving Features
+
+In addition to predicting the probabilities of a recession, we also wanted to know how heavily each feature was driving the model. _Were there any irrelevant features we could cut out? Were there any features that were surprisingly more influential than others? Do different features matter depending on how far out we’re trying to predict a recession?_ A quick random forest model was made to view the `feature_importances` and answer these questions. 
+
+Some features appeared high on the list across all the models, like the Consumer Price Index and the 10-Year 2-Year Yield Curve. As the idea for this project was first sparked by concerns raised over the inverted yield curve, these results seem to affirm those concerns.
